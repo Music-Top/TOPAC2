@@ -37,7 +37,7 @@ async def restart(client, m: Message):
 async def help(client, m: Message):
     await m.delete()
     p1ng = "https://telegra.ph/file/8a097ff16947d1c0ffd48.jpg"
-    await m.reply_photo(message.chat.id,p1ng,f"""<b>👀♥️ هلا عمري {m.from_user.mention}🙂
+    HELP = await m.reply_photo(message.chat.id,p1ng,f"""
 اوامر ميوزك توبك 
 ——————×—————
 
@@ -57,6 +57,7 @@ async def help(client, m: Message):
 ———————×———————
 القناة | @OYOYV
 المطور | @GTT_G""",)
+    await m.reply(HELP) 
 @Client.on_message(filters.command(["فحص"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
     await m.delete()
