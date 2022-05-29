@@ -57,7 +57,7 @@ async def help(client, m: Message):
 ———————×———————
 القناة | @OYOYV
 المطور | @GTT_G""",)
-    await m.reply(HELP) 
+    await m.reply(HELP, disable_web_page_preview=True)
 @Client.on_message(filters.command(["فحص"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
     await m.delete()
