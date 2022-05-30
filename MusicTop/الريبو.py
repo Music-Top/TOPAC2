@@ -35,7 +35,7 @@ async def restart(client, m: Message):
     quit()
 @Client.on_message(filters.command(["اوامري"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
-    await m.delete
+    await m.delete()
     HELP =f"""
 اوامر ميوزك توبك 
 ——————×—————
@@ -55,8 +55,8 @@ async def help(client, m: Message):
 ✪ | لأعاده تشغيل التنصيب أرسل ⇦  [ `{HNDLR}ريستارت` ]
 ———————×———————
 القناة | @OYOYV
-المطور | @GTT_G""",)
-    await m.reply(HELP, disable_web_page_preview=True)
+المطور | @GTT_G""")
+    await m.reply(HELP) 
 @Client.on_message(filters.command(["فحص"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
     await m.delete()
