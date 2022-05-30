@@ -35,9 +35,8 @@ async def restart(client, m: Message):
     quit()
 @Client.on_message(filters.command(["اوامري"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
-    await m.delete()
-    p1ng = "https://telegra.ph/file/8a097ff16947d1c0ffd48.jpg"
-    HELP = await m.reply_photo(message.chat.id,p1ng,f"""
+    await m.delete
+    HELP =f"""
 اوامر ميوزك توبك 
 ——————×—————
 
