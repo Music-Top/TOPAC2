@@ -55,7 +55,7 @@ async def help(client, m: Message):
 ✪ | لأعاده تشغيل التنصيب أرسل ⇦  [ `{HNDLR}ريستارت` ]
 ———————×———————
 القناة | @OYOYV
-المطور | @GTT_G""")
+المطور | @GTT_G"""
     await m.reply(HELP) 
 @Client.on_message(filters.command(["فحص"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
