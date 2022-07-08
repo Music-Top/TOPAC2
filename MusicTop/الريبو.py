@@ -30,10 +30,10 @@ async def restart(client, m: Message):
     await loli.edit("7")
     await loli.edit("8")
     await loli.edit("9")
-    await loli.edit("**✅ تم تحديث سورس ميوزك توب عام : @OYOYV**")
+    await loli.edit("**✅ تم تحديث سورس ميوزك توب عام : @U0QQQ**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
-@Client.on_message(filters.command(["اوامري"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["اوامر"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
     await m.delete()
     HELP =f"""
@@ -54,8 +54,8 @@ async def help(client, m: Message):
 
 ✪ | لأعاده تشغيل التنصيب أرسل ⇦  [ `{HNDLR}ريستارت` ]
 ———————×———————
-القناة | @OYOYV
-المطور | @GTT_G"""
+القناة | @U0QQQ
+المطور | @GGIKG"""
     await m.reply(HELP) 
 @Client.on_message(filters.command(["فحص"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
